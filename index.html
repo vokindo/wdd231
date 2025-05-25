@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="description" content="Okindo Chamber of Commerce website for local business resources.">
+    <meta name="author" content="Victor Okindo">
+    <title>Okindo Chamber of Commerce</title>
+    <link rel="stylesheet" href="small.css">
+    <link rel="stylesheet" href="larger.css">
 </head>
 <body>
-   <h1>Welcome to WDD 231 - Vokindo</h1> 
+    <!-- Header -->
+    <header>
+        <img src="images/profile-photo.webp" alt="Chamber of Commerce" width="50">
+        <span>Chamber of Commerce</span>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chamber">Chamber</a></li>
+                <li><a href="#final">Final</a></li>
+                <li><a href="https://github.com/vokindo">GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/your-profile">LinkedIn</a></li>
+            </ul>
+            <button id="hamburger">☰</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <h1>Welcome to Okindo Chamber of Commerce</h1>
+            <p>Your one-stop resource for local businesses in Okindo.</p>
+        </section>
+        <section id="chamber">
+            <h2>Chamber Information</h2>
+            <p>Details about the Chamber of Commerce.</p>
+        </section>
+        <section id="discover">
+            <h2>Discover Okindo</h2>
+            <p>Learn about the local history, demographics, and events that make Okindo unique.</p>
+            <img src="images/discover-image.jpg" alt="Okindo Downtown" width="20%" height="auto">
+        </section>  
+        <section id="course-section">
+            <h2>Courses</h2>
+
+            <div class="filter-buttons">
+                <button id="allCoursesBtn">All Courses</button>
+                <button id="wddCoursesBtn">WDD Courses</button>
+                <button id="cseCoursesBtn">CSE Courses</button>
+                <button id="completedCoursesBtn">Completed Courses</button>
+                <button id="incompleteCoursesBtn">Incomplete Courses</button>
+                <button id="creditsFilterBtn">Filter by Credits</button>
+            </div>
+
+            <div id="creditRange" style="display:none;">
+                <label for="minCredits">Min Credits:</label>
+                <input type="number" id="minCredits" min="0" max="10">
+                <label for="maxCredits">Max Credits:</label>
+                <input type="number" id="maxCredits" min="0" max="10">
+                <button id="applyCreditFilter">Apply</button>
+            </div>
+
+            <ul id="course-container"></ul>
+            <div>
+                <p>Total Credits for Completed Courses: <span id="creditsCount">0</span></p>
+            </div>
+        </section>
+        
+        <section id="final">
+            <h2>Final Project</h2>
+            <p>Information on the final project.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name, Okindo, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="date.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <script src="course.js" defer></script>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

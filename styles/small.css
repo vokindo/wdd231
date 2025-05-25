@@ -1,0 +1,85 @@
+/* small.css - For screens 320px to 767px */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header img {
+        width: 40px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-nav.open ul {
+        display: flex;
+    }
+
+    #hamburger {
+        background-color: #0044cc;
+        color: white;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+#course-section {
+    padding: 20px;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: #0033aa;
+}
+
+#course-container div {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.completed {
+    background-color: #d4edda;
+}
+
+.incomplete {
+    background-color: #f8d7da;
+}
