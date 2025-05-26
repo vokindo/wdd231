@@ -64,3 +64,11 @@
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* optional: limit the size on large screens */
+    display: block;
+    margin: 0 auto; /* center the image */
+}
