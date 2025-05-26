@@ -85,9 +85,9 @@
 }
 
 .responsive-img {
-    width: 100%;
+    width: 25%;
     height: auto;
-    max-width: 800px; /* optional: limit the size on large screens */
+    max-width: 500px; /* optional: limit the size on large screens */
     display: block;
     margin: 0 auto; /* center the image */
 }
