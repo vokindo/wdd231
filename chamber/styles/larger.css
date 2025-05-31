@@ -1,0 +1,103 @@
+/* Desktop Styles */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .grid .member-card {
+        display: inline-block;
+        width: 30%;
+        margin: 10px;
+    }
+
+    .list .member-card {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .member-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .member-card h3 {
+        margin: 10px 0;
+    }
+}
+
+/* larger.css - For screens 768px and up */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #0044cc;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 30px;
+        background-color: white;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+/* Hover Effect for Course Cards */
+.course-card {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* optional: limit the size on large screens */
+    display: block;
+    margin: 0 auto; /* center the image */
+}

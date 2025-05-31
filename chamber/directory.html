@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Okindo Chamber of Commerce Directory of Members.">
+    <meta name="author" content="Victor Okindo">
+    <title>Okindo Chamber of Commerce - Directory</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.png">
+
+    <!-- Open Graph Meta Tags for Facebook -->
+    <meta property="og:title" content="Okindo Chamber of Commerce Directory">
+    <meta property="og:description" content="Directory of local businesses and organizations in Okindo Chamber of Commerce.">
+    <meta property="og:image" content="https://www.yoursite.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.yoursite.com/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Okindo Chamber of Commerce">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Okindo Chamber of Commerce Directory">
+    <meta name="twitter:description" content="Directory of local businesses and organizations in Okindo Chamber of Commerce.">
+    <meta name="twitter:image" content="https://www.yoursite.com/images/og-image.jpg">
+    <meta name="twitter:site" content="@OkindoChamber">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/profile-photo.jpg" alt="Chamber of Commerce" width="50">
+        <span>Okindo Chamber of Commerce</span>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <button id="hamburger">☰</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="directory">
+            <h1>Directory of Chamber Members</h1>
+            <div>
+                <button id="gridViewBtn">Grid View</button>
+                <button id="listViewBtn">List View</button>
+            </div>
+            <ul id="member-container"></ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Victor Okindo, WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</body>
+</html>
