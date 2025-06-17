@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You - Chamber</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <!-- Include your nav here -->
+  </header>
+
+  <main>
+    <section class="thank-you">
+      <h2>Thank You for Joining!</h2>
+      <p>We appreciate your interest in our Chamber. Below is the information you submitted:</p>
+      <ul id="submission-details"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Your Chamber | All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Display current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Parse form data from URL
+    const params = new URLSearchParams(window.location.search);
+    const fields = ["fname", "lname", "email", "phone", "organization", "timestamp"];
+    const labels = {
+      fname: "First Name",
+      lname: "Last Name",
+      email: "Email",
+      phone: "Phone Number",
+      organization: "Organization Name",
+      timestamp: "Form Submission Date & Time"
+    };
+
+    const list = document.getElementById("submission-details");
+    fields.forEach(field => {
+      const value = params.get(field);
+      if (value) {
+        const li = document.createElement("li");
+        li.textContent = `${labels[field]}: ${decodeURIComponent(value)}`;
+        list.appendChild(li);
+      }
+    });
+  </script>
+</body>
+</html>
