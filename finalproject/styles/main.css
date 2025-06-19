@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a6f77; /* Calm Blue */
+    color: white;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #2a6f77; /* Calm Blue */
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+section {
+    margin: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #2a6f77; /* Calm Blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Mobile Styles - Initially hide the menu */
+@media (max-width: 768px) {
+    #main-nav ul {
+        display: none;  /* Hide the menu by default */
+        flex-direction: column;  /* Stack menu items vertically */
+        padding: 0;
+    }
+
+    #hamburger {
+        display: block;  /* Show the hamburger button on mobile */
+        background-color: #2a6f77;
+        color: white;
+        border: none;
+        font-size: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    /* When the hamburger is clicked, show the menu */
+    #main-nav.open ul {
+        display: flex;  /* Show the menu */
+    }
+}
+
+h1 {
+    font-size: 2rem;  /* Adjust the size as per your design */
+}

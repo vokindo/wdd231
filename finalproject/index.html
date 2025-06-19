@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WellNest: A wellness tracker to monitor moods, stress, and sleep.">
+    <meta name="author" content="Victor Okindo">
+    <meta property="og:title" content="WellNest - Wellness Tracker">
+    <meta property="og:description" content="Track your mood, stress, and sleep with WellNest.">
+    <meta property="og:image" content="images/wellness-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WellNest - Wellness Tracker">
+    <meta name="twitter:description" content="Track your wellness journey with WellNest">
+    <meta name="twitter:image" content="images/wellness-image.jpg">
+    <title>WellNest - Wellness Tracker</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.png">
+    
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="WellNest Logo" width="50">
+        <span>WellNest</span>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wellness.html">Start Tracking</a></li>
+                <li><a href="progress.html">Your Progress</a></li>
+            </ul>
+            <button id="hamburger">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Welcome to WellNest</h1>
+            <p>Track your wellness: mood, stress, and sleep with our personalized tools.</p>
+            <a href="wellness.html" class="cta-button">Start Tracking Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Victor Okindo, WDD 231</p>
+    </footer>
+
+    <script src="scripts/date.js" defer></script>
+    <script>
+        // JavaScript to toggle the hamburger menu visibility
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('open');
+        });
+    </script>
+    <script src="scripts/date.js" defer></script>
+</body>
+</html>
