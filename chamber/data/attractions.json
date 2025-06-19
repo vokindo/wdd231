@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Porta Nigra",
+    "image": "images/",
+    "address": "Porta-Nigra-Platz, 54290 Trier, Germany",
+    "description": "One of the best-preserved Roman gates north of the Alps.",
+    "link": "#"
+  },
+  {
+    "name": "Trier Cathedral",
+    "image": "images/",
+    "address": "Liebfrauenstraße 12, 54290 Trier, Germany",
+    "description": "Germany’s oldest cathedral, a UNESCO World Heritage Site.",
+    "link": "#"
+  },
+  {
+    "name": "Karl Marx House",
+    "image": "images/",
+    "address": "Brückenstraße 10, 54290 Trier, Germany",
+    "description": "Birthplace of Karl Marx, now a museum.",
+    "link": "#"
+  },
+  {
+    "name": "Imperial Baths",
+    "image": "images/",
+    "address": "Weberbach 41, 54290 Trier, Germany",
+    "description": "Vast Roman bath ruins from the 4th century.",
+    "link": "#"
+  },
+  {
+    "name": "Roman Bridge",
+    "image": "images/",
+    "address": "Römerbrücke, 54290 Trier, Germany",
+    "description": "Germany’s oldest bridge still in use today.",
+    "link": "#"
+  },
+  {
+    "name": "Electoral Palace",
+    "image": "images/",
+    "address": "Willy-Brandt-Platz 3, 54290 Trier, Germany",
+    "description": "Magnificent rococo palace next to Roman ruins.",
+    "link": "#"
+  },
+  {
+    "name": "Amphitheater",
+    "image": "images/",
+    "address": "Olewiger Straße, 54295 Trier, Germany",
+    "description": "Ancient Roman amphitheater used for public events.",
+    "link": "#"
+  },
+  {
+    "name": "Basilica of Constantine",
+    "image": "images/",
+    "address": "Liebfrauenstraße 10, 54290 Trier, Germany",
+    "description": "Gigantic Roman audience hall turned into a church.",
+    "link": "#"
+  }
+]
